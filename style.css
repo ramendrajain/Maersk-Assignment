@@ -1,0 +1,129 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  margin: 15px 0px;
+}
+h4 {
+  text-align: center;
+  margin: 15px 0px;
+}
+body {
+  min-height: 100vh;
+  background-color: gray;
+}
+.main-container {
+  position: relative;
+}
+.flex-container {
+  display: inline-flex;
+  height: auto;
+  flex-wrap: wrap;
+  width: 70%;
+  box-sizing: border-box;
+}
+.flex-container-rt {
+  height: auto;
+  align-content: space-between;
+  flex-direction: column;
+  display: inline-flex;
+  margin: 0 auto;
+  width: 29%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.flex-container-rt > div {
+  padding: 10px;
+  align-self: center;
+  margin: 10px 0px;
+  width: 80px;
+  margin: 20px 0px;
+  background-color: #2b8ead;
+
+  cursor: pointer;
+  box-shadow: 3px 3px 5px 6px #2b8ead;
+
+  margin: 0 auto;
+  margin-bottom: 35px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+.flex-container > div {
+  width: 33.3%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 75px;
+  box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+.card-1 {
+  background-color: #000000;
+  border-left: 4px solid #000000;
+}
+.card-2 {
+  background-color: #333333;
+  border-left: 4px solid #333333;
+}
+.card-3 {
+  background-color: #2f454e;
+  border-left: 4px solid #2f454e;
+}
+.card-4 {
+  background-color: #efefef;
+  border-left: 4px solid #efefef;
+}
+.card-5 {
+  background-color: #72c3dc;
+  border-left: 4px solid #72c3dc;
+}
+.card-6 {
+  background-color: #2b8ead;
+  border-left: 4px solid #2b8ead;
+}
+.card-7 {
+  background-color: #6f98a8;
+  border-left: 4px solid #6f98a8;
+}
+.card-8 {
+  background-color: #bfbfbf;
+  border-left: 4px solid #bfbfbf;
+}
+.card-9 {
+  background-color: #2f454e;
+  border-left: 4px solid #2f454e;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-color: white;
+  }
+  .flex-container {
+    width: 100%;
+    margin-top: 75px;
+  }
+  .flex-container > div {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: lightgray;
+  }
+
+  .flex-container-rt {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+  }
+}
